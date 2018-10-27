@@ -33,7 +33,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if(editText_user.getText().toString() != null && editText_pass.getText().toString() != null){
+                if(editText_user.getText() != null && editText_pass.getText() != null){
                     Intent intent = new Intent(LoginActivity.this,ListActivity.class);
                     startActivity(intent);
                 }
